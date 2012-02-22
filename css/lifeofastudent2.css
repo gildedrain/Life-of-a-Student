@@ -1,0 +1,50 @@
+body{background:url(../images/bg_bodybg.jpg) repeat-x 0 90px;}
+h2, h2#menutitle{text-indent:-9999em; display:none;  margin-left:200px; width:766px;}
+a {color:;}
+/* HIDE STUFF */
+#globalnav{display:none;}
+#aside {display:none;}
+#section.hasmenu,section.hasmenu,.section.hasmenu{float:none;width:970px; margin-left:-5px; padding:0;}
+/* HORZY NAV */
+
+.section {margin:30px 0 0 0; padding:30px 0 0 0; background:transparent; min-height:800px;}
+
+.slider {width:950px; overflow:hidden; margin:0;}
+
+.slidernav {list-style:none; padding:0; font-size:1.1em; margin:0;}
+.slidernav li {padding:0; display:inline-block;}
+.ie7 .slidernav li {display:inline-block;}
+.slidernav a {display:inline-block; padding:2px 10px 2px 10px; margin:7px 0 4px 0; color:#000; background-color:#FFF; border-radius:20px; border:1px solid #fff;}
+.slidernav a:hover {text-decoration:none; background:#1799fe; color:#fff;}
+.slidernav a.current {background:#1799fe; color:#fff;}
+
+.slides_window {width:950px; overflow:hidden; padding-top:10px;}
+.slides {width:10000px; overflow:hidden; position:relative;}
+.slide {float:left; width:950px; min-height:800px;}
+
+
+
+
+#nav_intro, #nav_intro:hover, #nav_intro.current {background:#0054a5; border-color:#0054a5;}
+#nav_finances, #nav_finances:hover, #nav_finances.current {background:#8ec63f; border-color:#8ec63f;}
+#nav_getinvolved,#nav_getinvolved:hover, #nav_getinvolved.current {background:#7abde8; border-color:#7abde8;}
+#nav_business,#nav_business:hover, #nav_business.current {background:#ef3125; border-color:#ef3125;}
+#nav_academicsuccess,#nav_academicsuccess:hover, #nav_academicsuccess.current {background:#ffcf01; border-color:#ffcf01;}
+#nav_lifeafter,#nav_lifeafter:hover, #nav_lifeafter.current {background:#00a6da; border-color:#00a6da;}
+#nav_intro,#nav_finances,#nav_getinvolved,#nav_business,#nav_academicsuccess,#nav_lifeafter {background:#fff;}
+
+
+
+/* TYPOGRAPHY */
+h3 {font-weight:bold; font-style:italic; font-size:2em; margin:0 0 .5em 0; color:#fff;}
+.ie7, .ie8 {font-size:90%;}
+.ie7 h3, .ie8 h3 {font-size:1.75em;}
+
+.section p {background:#FFF; border-radius:6px; border:1px solid rgba(0,0,255,.25); padding:1em;}
+
+.slide#intro {background:url(../images/slide1.png) no-repeat top left;}
+.slide#finances {background:url(../images/slide2.png) no-repeat top left;}
+.slide#getinvolved {background:url(../images/slide3.png) no-repeat top left;}
+.slide#business {background:url(../images/slide4.png) no-repeat top left;}
+.slide#academicsuccess {background:url(../images/slide5.png) no-repeat top left;}
+.slide#lifeafter {background:url(../images/slide6.png) no-repeat top left;}
