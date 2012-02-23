@@ -7,7 +7,7 @@ a {color:;}
 #section.hasmenu,section.hasmenu,.section.hasmenu{float:none;width:970px; margin-left:-5px; padding:0;}
 /* HORZY NAV */
 
-.section {margin:75px 0 0 0; padding:30px 0 0 0; background:transparent; min-height:300px;}
+.section {margin:75px 0 0 0; padding:30px 0 0 0; background:transparent; min-height:800px;}
 
 .slider {width:950px; overflow:hidden; margin:0;}
 
@@ -20,7 +20,7 @@ a {color:;}
 
 .slides_window {float:left; width:720px; margin-left:220px; overflow:hidden; padding-top:10px;}
 .slides {width:10000px; overflow:hidden; position:relative;}
-.slide {float:left; width:720px;}
+.slide {float:left; width:720px; min-height:800px;}
 
 
 
@@ -42,10 +42,9 @@ h3 {font-weight:bold; font-style:italic; font-size:2em; margin:0 0 .5em 0; color
 
 .section p {background:#FFF; border-radius:6px; border:1px solid rgba(0,0,255,.25); padding:1em;}
 
-/*
-#intro {background:url(../images/bg_intro.jpg) no-repeat top left;}
-#finances {background:url(../images/bg_finances.jpg) no-repeat top left;}
-#getinvolved {background:url(../images/bg_getinvolved.jpg) no-repeat top left;}
-#business {background:url(../images/bg_business.jpg) no-repeat top left;}
-#academicsuccess {background:url(../images/bg_academicsuccess.jpg) no-repeat top left;}
-#lifeafter {background:url(../images/bg_lifeafter.jpg) no-repeat top left;}
+.slide#intro {background:url(../images/slide1.png) no-repeat top left;}
+.slide#finances {background:url(../images/slide2.png) no-repeat top left;}
+.slide#getinvolved {background:url(../images/slide3.png) no-repeat top left;}
+.slide#business {background:url(../images/slide4.png) no-repeat top left;}
+.slide#academicsuccess {background:url(../images/slide5.png) no-repeat top left;}
+.slide#lifeafter {background:url(../images/slide6.png) no-repeat top left;}
