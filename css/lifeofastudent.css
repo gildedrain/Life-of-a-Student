@@ -39,9 +39,8 @@ h2, h2#menutitle{color:#FFF; text-shadow:0 2px 3px rgba(0,0,0,.5); font-family:'
 
 
 /* TYPOGRAPHY */
-/*h3 {font-weight:bold; font-style:italic; font-size:4em; margin:0 0 .5em 0; color:#000;  }*/
-h3 {display:none;}
-.section p {display:none;background:#FFF; border-radius:6px; border:1px solid rgba(0,0,255,.25); padding:1em;}
+h3 {font-weight:bold; font-style:italic; font-size:4em; margin:0 0 .5em 0; color:#000;  }
+.section p {background:#FFF; border-radius:6px; border:1px solid rgba(0,0,255,.25); padding:1em;}
 
 /*SLIDES*/
 .slide#intro {background:url(../images/slide1.png) no-repeat top left;}
