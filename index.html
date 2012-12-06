@@ -1,169 +1,353 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
-<head id="Head1"><title>
-  Onondaga Community College
-</title><script id="EktronJS" type="text/javascript" src="/WorkArea/java/ektron.js"></script><script id="EktronSiteDataJS" type="text/javascript" src="/WorkArea/java/ektron.site-data.js.ashx"></script><script id="EktronRegisteredJs" type="text/javascript" src="/workarea/java/ektronJs.ashx?id=EktronFlexMenuJS+EktronWebToolBarJS"></script><script id="AjaxScript" type="text/javascript" src="/WebResource.axd?d=4U9vpJpy2gSqK25ZHk13Z94KgwMr7ig7z2vy7Nt2iYGL9DMFIkfZV2D08mVKFf2cNCv5LY57InwftGQnphamMT1hk2qQjGjaLLb8jwci0pkgSp9NJhVZyi38jBFc4FrqZRpZ-DSh2pfC3VtsMeGPog2&amp;t=634232758640000000"></script><script id="EktronXmlJS" type="text/javascript" src="/WorkArea/java/ektron.xml.js"></script><script id="EktronStringJS" type="text/javascript" src="/WorkArea/java/plugins/string/ektron.string.js"></script><script id="EkXBrowser" type="text/javascript" src="/WorkArea/ContentDesigner/ekxbrowser.js"></script><script id="EktronSmartFormJS" type="text/javascript" src="/WorkArea/ContentDesigner/ektron.smartform.js"></script><link id="EktronRegisteredCss" rel="stylesheet" type="text/css" href="/workarea/csslib/ektronCss.ashx?id=EktronModalCss+EktronBubbleCss+EktronSmartFormCss" /><!-- BEGIN head INCLUDE FILE -->
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<!-- GUI framework -->
-<link type="text/css" rel="stylesheet" href="http://gui.sunyocc.edu/gui/css/gui.css" media="all" />
-<script type="text/javascript" src="http://gui.sunyocc.edu/gui/js/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="http://gui.sunyocc.edu/gui/js/jquery-ui-1.8.4.custom.min.js"></script>
-<script type="text/javascript" src="../../gui/js/tools.js"></script>
-<!-- OCC-specific code -->
-<link type"text/css" rel="stylesheet" href="http://gui.sunyocc.edu/occ_global/css/occ_global.css" media="screen" />
-<script type="text/javascript" src="http://gui.sunyocc.edu/occ_global/js/occ_tools.js"></script>
-<script type="text/javascript" src="http://gui.sunyocc.edu/occ_global/js/AC_RunActiveContent.js"></script>
-<!-- END head INCLUDE FILE -->
-<link type="text/css" rel="stylesheet" href="http://www.sunyocc.edu/css/www.css" media="screen" />
-<link type="text/css" rel="stylesheet" href="css/lifeofastudent.css" media="all" />
-
-
-<link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Lobster|Open+Sans' rel='stylesheet' type='text/css'>
-
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <title id="pageTitle" runat="server"></title>  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <!-- GUI framework -->
+  <link type="text/css" rel="stylesheet" href="../../gui/css/gui.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="../../occ_global/css/occ_global.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="../../gui/css/jqueryui.css" media="all" />
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Sarina|PT+Mono|Open+Sans+Condensed:300,700,300italic|Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800|Dancing+Script:400,700|Nothing+You+Could+Do|Devonshire|Rock+Salt' rel='stylesheet' type='text/css'>
+  <link type="text/css" rel="stylesheet" href="css/lifeofastudent.css" media="all" />
 </head>
 <body id="index">
-    <div class="container">  <span class="forprint" id="printheader">    <img src="http://gui.sunyocc.edu/occ_global/http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/header/occlogo_print.gif" height="108" width="150" alt="" />    <p><strong>Onondaga Community College</strong><br />      www.sunyocc.edu - occinfo@sunyocc.edu<br />      4585 West Seneca Turnpike, Syracuse, NY 13215-4585<br />      (315) 498-2622</p>      <hr />  </span>    <div class="col1" id="logo">        <a href="http://www.sunyocc.edu" class="logo" title="Return to the Main College Homepage">Onondaga Community College</a>    </div></div>
-    <div id="banner_container"><div id="emergency"><span id="cntEmergency"></span></div><div id="announcement"><span id="cntAnnouncement"></span></div>
-    <div id="siteheader"><a href="#section" id="skipnav">Skip Navigation</a><div class="container"><div id="panel" class="basic"><a class="toggle" id="toggle_open" href="#panel">QuickLinks <span>Open Panel</span></a><a class="toggle close" id="toggle_close" href="#container">QuickLinks <span>Close Panel</span></a><div id="subpanel"><ul><li><a id="megamenu_home" href="http://www.sunyocc.edu/">Main College Homepage</a></li><li><a id="megamenu_news" href="http://www.sunyocc.edu/news.aspx">News</a></li><!--          <li><a id="megamenu_calendar" href="http://sunyocc.edu/">Calendar</a></li> -->          <li><a id="megamenu_directory" href="http://www.sunyocc.edu/index.aspx?menu=91&id=1827">Directory</a></li><!--          <li><a id="megamenu_maps" href="http://www.sunyocc.edu/">Maps &amp; Directions</a></li> -->          <li><a id="megamenu_contact" href="http://www.sunyocc.edu/index.aspx?ekfrm=3970">Contact Us</a></li>        </ul>        </div>      </div>      <form class="col2 labels-inside" action="http://www.sunyocc.edu/search.aspx" id="cse-search-box">        <input type="hidden" name="cx" value="009247214289687445570:4z5fbtg2lek" />          <input type="hidden" name="cof" value="FORID:11" />          <input type="hidden" name="ie" value="UTF-8" />        <label class="hide" for="search">Search...</label>        <input id="search" name="q" type="text" title="Search..." />        <input type="submit" name="sa" class="searchbutton" value="Search" />      </form>    </div>  </div>    </div>
-    <div id="banner_spacer"><span id="ContentBlock2"></span><span id="ContentBlock3"></span></div>
-    <div id="globalnav"><div class="container"><span id="cntGlobalNav"><div class="col1 first"><a href="http://admission.sunyocc.edu/">Admission</a><br /><a href="http://admission.sunyocc.edu/academics.aspx">Academics</a><br /><a href="http://admission.sunyocc.edu/explore.aspx">Student Life</a></div><div class="col1"><a href="/index.aspx?menu=78">Athletics</a><br /><a href="/index.aspx?menu=90">Arts &amp; Culture</a><br /><a href="/index.aspx?menu=136">Community Ed</a><br /></div><div class="col1"><a href="/index.aspx?menu=91">About the College</a><br /><a href="/news.aspx?keyword=Headlines&amp;collside=495">News &amp; Events</a></div></span>         <p class="dots">&nbsp;</p>        </div>    </div>
-
-
-    <div class="container">
-      <h2 id="menutitle">Life of a Student</h2>
-
-
-    </div>
-    <div class="content">
-      <form name="Form1" method="post" action="/index.aspx" id="Form1">
-        <div class="container">
-            <div id="aside" class="clearfix">
-                <!--\\ MENU BEGINS -->
-                <div class="menu">
-                    <span id="Menu1" class="flexmenu"><link type="text/css" rel="stylesheet" href="" /><div class=""><div class="ekflexmenu" id="e349952e0_0_0_ekflexmenu"><div class="ekflexmenu_menu_level_0 ekflexmenu_submenu"><ul class="ekflexmenu_submenu_items" id="e349952e0_0_0_submenu_items"></ul></div></div></div></span>
-                </div>
-                <!--// MENU ENDS -->
-            </div>
-            <div id="section" class="clearfix">
-<!-- begin content block -->
-<div id="lifeofastudent" class="section bg-white clearfix"><div class="slider"><ul class="slidernav clearfix">
-<li><a id="nav_intro" class="current" href="#intro">Intro</a></li>
-<li><a id="nav_finances" href="#finances">Finances</a></li>
-<li><a id="nav_getinvolved" href="#getinvolved">Get Involved</a></li>
-<li><a id="nav_business" href="#business">Taking Care of Business</a></li>
-<li><a id="nav_academicsuccess" href="#academicsuccess">Academic Success</a></li>
-<li><a id="nav_lifeafter" href="#lifeafter">Life After Onondaga</a></li>
-</ul>
-<div class="slides_window"><div class="slides"><div class="slide" id="intro"><h3>Intro</h3>
-<div class="col4 bg-hint-blue"><p>Life as a student at Onondaga Community College is a journey filled with experiences both in and out of the classroom. There's so much to think about and so many opportunities -- whether it's academics, financial aid, athletics, volunteering, extracurriculars, or more. You can explore your interests, discover your inherent talents, and transform your possibilities.</p>
-<p>This website can help you navigate through the intricacies of college life and keep you on the path to success at Onondaga and beyond. Use this resource as a guide for your Onondaga journey and all it has to offer.</p>
-</div>
-</div>
-<div class="slide" id="finances"><h3>Finances</h3>
-<div class="col1 bg-light-green"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/edit.png" />Have you re-applied for financial aid and taken care of documents you need to complete your financial aid application?<a class="button small bg-hint-green" href="http://students.sunyocc.edu/central.aspx?menu=386">Learn How</a> </p>
-</div>
-<div class="col1 bg-hint-green"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/refresh.png" class="left" />Do you need to set up a payment plan to take care of your financial obligations to the College? <a class="button small bg-light-green" href="http://students.sunyocc.edu/central.aspx?menu=386">Start Now</a></p>
-</div>
-<div class="col1dot5 bg-white"><p><strong>Got questions?</strong><br />Get short video answers on <a href="#" class="button small bg-medium-green">Financial Aid TV</a></p>
-</div>
-<div class="col2 bg-white"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/newyork.jpg" class="left" />If you live outside of Onondaga county but in New York State, did you get your certificate of residency to ensure you continue to pay in-state tuition (60 days prior to the start of the fall)?   <a class="button small bg-dark-green white" href="http://students.sunyocc.edu/central.aspx?id=17796">Learn How</a></p>
-</div>
-</div>
-<div class="slide" id="getinvolved"><h3>Get Involved</h3>
-<div class="col1 bg-dark-blue white"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/intramural.jpg" /><p>Basketball, flag football, dodgeball, fantasy football and Madden football are just a few of the intramural sports you can do at Onondaga.<a class="button small bg-hint-blue" href="http://students.sunyocc.edu/life.aspx?menu=434&amp;id=1742">List of Sports</a></p>
-</div>
-<div class="col1 bg-hint-blue"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/servicelearning.jpg" /><p>Volunteering is a great way to give back while also gaining real experience.  The CAL Center can help find the right volunteer opportunity for you.<a class="button small bg-dark-blue white" href="http://students.sunyocc.edu/support.aspx?menu=410&amp;id=5013">CAL Center</a></p>
-</div>
-<div class="col2 bg-pale-blue"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/geologyclub.jpg" /><p>Onondaga has over 30 clubs and organizations that you can join to get involved with campus life.   <a class="button small bg-dark-blue white" href="http://students.sunyocc.edu/life.aspx?menu=490&amp;id=11084">Full List</a></p>
-</div>
-<div class="col2 bg-black white"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/calendar.png" /><br />From party on the quad to performances at the SRC Arena, there is never a dull moment on campus. Check the web calendar on the Students' Site to see all the upcoming events.</p>
-<a class="button small bg-dark-orange" href="http://students.sunyocc.edu/">Calendar</a>
-</div>
-</div>
-<div class="slide" id="business"><h3>Taking Care of Business</h3>
-<div class="col2 bg-medium-red white"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/parking.jpg" class="left" />Did you get a new parking sticker?<a class="button small bg-hint-red" href="http://students.sunyocc.edu/">Learn How</a></p>
-</div>
-<div class="col1dot5 bg-dark-red white"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/smartcard.jpg" /><br />Do you need to add funds to your SMART card? You can do it online or in person.   <a class="button small bg-pale-red" href="http://students.sunyocc.edu/support.aspx?id=42">Add Funds</a></p>
-</div>
-<div class="col2 bg-black white"><p>Keep checking your OCC email to stay up to date on college events and requirements</p>
-<object style="height: 233px; width: 310px"><param name="movie" value="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"></embed></object>
-                        </div>
-</div>
-<div class="slide" id="academicsuccess"><h3>Academic Success</h3>
-<div class="col1 bg-light-yellow"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/advising.jpg" /><p>Have you met with an advisor to talk about your goals and select the courses to keep you on track to graduate? <a class="button small bg-hint-yellow" href="http://students.sunyocc.edu/central.aspx?menu=372&amp;id=1557">Learn More</a></p>
-</div>
-<div class="col2 bg-black white"><p>Have you registered for courses?</p>
-<object style="height: 233px; width: 310px"><param name="movie" value="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"></embed></object>
-                        </div>
-<div class="col1 bg-pale-yellow"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/user_error.png" /><br />Have you looked at your program evaluation (degree audit) to find out what you still need to take to graduate?<a class="button small bg-medium-yellow" href="http://students.sunyocc.edu/central.aspx?menu=540&amp;id=22698">Start Now</a></p>
-</div>
-<div class="col2 bg-white"><p><strong>Courses may get harder.</strong><br />Don't forget about our free tutoring services:</p>
-<ul>
-<li><a href="http://students.sunyocc.edu/index.aspx?id=1409">Writing Skills Center</a></li>
-<li><a href="http://students.sunyocc.edu/support.aspx?id=137">NightWriter</a></li>
-<li><a href="http://students.sunyocc.edu/support.aspx?menu=394&amp;id=1556">Content Tutoring Center</a></li>
-<li><a href="http://students.sunyocc.edu/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=28236&amp;libID=28149">Language Lab</a></li>
-<li><a href="http://students.sunyocc.edu/support.aspx?id=136">Study Skills Center</a></li>
-<li><a href="http://students.sunyocc.edu/support.aspx?menu=398&amp;id=1079">Math Support Services</a></li>
-</ul>
-</div>
-<div class="col2 bg-black white"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/graduation.jpg" /><p>Are you planning to graduate in the coming year? Don't forget to submit your application to participate in the ceremony before the start of your final semester.   <a class="button small bg-dark-yellow" href="http://students.sunyocc.edu/support.aspx">Apply Now</a></p>
-</div>
-</div>
-<div class="slide" id="lifeafter"><h3>Life After Onondaga</h3>
-<div class="col1 bg-medium-blue white"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/careertransfer.jpg" /><p>Do you need to talk to a transfer and/or career expert to begin planning for life after Onondaga?  <a class="button small bg-pale-blue" href="http://students.sunyocc.edu/central.aspx?menu=430&amp;id=1662">Get Help</a></p>
-</div>
-<div class="col2 bg-pale-blue"><p>Take an internship to get prepared for a job after college.  Here are some of the places our students have worked.   <a class="button small bg-hint-blue" href="http://students.sunyocc.edu/support.aspx?menu=410&amp;id=9488">Get an Internship</a></p>
-<img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/internships.jpg" width="310" height="310" /></div>
-<div class="col2 bg-dark-blue white"><p>Your degree from Onondaga is the first step on the path to anywhere you want to go.</p>
-<object style="height: 233px; width: 310px"><param name="movie" value="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"></embed></object>
-                        </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- end content block -->
-            </div>
+  <div id="top">
+      <div id="emergency">
+        <p>Something happened on the way to the forum when this guy said something to this lady and she stood up and left. and then my mom said she's a pickle. <a href="#" class="button small">More Info</a></p>
+      </div>
+      <div id="announcement">
+        <p>Something happened on the way to the forum when this guy said something to this lady and she stood up and left. and then my mom said she's a pickle. <a href="#" class="button small">More Info</a></p>
+      </div>
+      <div class="container">
+        <div id="occlogo"><a href="http://www.sunyocc.edu">Onondaga Community College</a></div>
+      </div>
+      <div id="occheaderbg" class="basic"></div><!-- header background -->
+      <div class="container">
+        <div class="headernav basic">
+          <div>
+            <h3>QuickLinks</h3>
+            <ul>
+              <li><a href="#" class="white">Main Homepage</a></li>
+              <li><a href="#" class="light-blue">Current Students</a></li>
+              <li><a href="#" class="light-blue secure">Employees</a></li>
+              <li><a href="#" class="white">Maps + Directions</a></li>
+              <li><a href="#" class="white">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="formbox">
+            <form class="labels-inside" action="http://www.sunyocc.edu/search.aspx" id="cse-search-box">
+              <input type="hidden" name="cx" value="009247214289687445570:4z5fbtg2lek" />
+              <input type="hidden" name="cof" value="FORID:11" />
+              <input type="hidden" name="ie" value="UTF-8" />
+              <label for="search" class="hide">I'm looking for...</label>
+              <input id="search" name="q" class="searchbox" type="text" title="I'm looking for..." value="" /><input name="sa" class="submitbutton" type="submit" value="go" />
+            </form>
+            <p class="medium-grey uppercase">Top Searches</p>
+            <ul>
+              <li><a href="#" class="light-blue">Make a Payment</a></li>
+              <li><a href="#" class="light-blue">Financial Aid</a></li>
+              <li><a href="#" class="light-blue">Campus Map</a></li>
+              <li><a href="#" class="light-blue">Admission</a></li>
+              <li><a href="#" class="light-blue">Academic Calendar</a></li>
+            </ul>
+          </div>
         </div>
-      </form>
+      </div>
+    </div>
+    <div id="main" role="main">
+      <div class="container">
+        <!-- MENUTITLE H2 --><h2 id="menutitle">Life of a Student</h2>
+      </div>
+      <!-- begin COLGRID / sitelet -->
+      <!-- //end COLGRID / sitelet -->
+      <!-- BEGIN PARENT EKTRON FORM -->
+      <form>
+        <!-- BEGIN CONTAINER -->
+        <div class="container">
+          <!-- BEGIN ASIDE AREA -->
+          <div id="aside" class="clearfix">
+            <!-- BEGIN MENU AREA -->
+            <div class="menu">
+              <span id="Menu1" class="flexmenu"><link type="text/css" rel="stylesheet" href=""><div class=""><div class="ekflexmenu" id="e349952e0_788_
+                0_ekflexmenu
+                          "><div class="
+                              ekflexmenu_menu_level_0 ekflexmenu_submenu
+                            "><ul class="ekflexmenu_submenu_items" id="e349952e0_788_
+                0_submenu_items
+                                "><li class="
+                      ekflexmenu_menu_level_1 ekflexmenu_submenu ekflexmenu_startlevel
+                      " id="e349952e0_788_798"><a id="e349952e0_788_798_button
+                      " tabindex="0" onkeydown="return (ekFlexMenuKey(event));" onblur="return (ekFlexMenuMsOut(event));" onfocus="return (ekFlexMenuMsOvr(event));" onclick="return (ekFlexMenuClk(event));" onmouseover="return (ekFlexMenuMsOvr(event));" onmouseout="return (ekFlexMenuMsOut(event));" class="ekflexmenu_button" href="/paying.aspx?menu=788&amp;id=25244&amp;collside=471">Overview</a><input type="hidden" id="e349952e0_788_798_parentid
+                    " value="e349952e0_788_
+                788"></li><li class="
+                      ekflexmenu_menu_level_1 ekflexmenu_submenu ekflexmenu_startlevel
+                      " id="e349952e0_788_799"><a id="e349952e0_788_799_button
+                      " tabindex="0" onkeydown="return (ekFlexMenuKey(event));" onblur="return (ekFlexMenuMsOut(event));" onfocus="return (ekFlexMenuMsOvr(event));" onclick="return (ekFlexMenuClk(event));" onmouseover="return (ekFlexMenuMsOvr(event));" onmouseout="return (ekFlexMenuMsOut(event));" class="ekflexmenu_button_selected" href="/paying.aspx?menu=788&amp;collside=475&amp;coll_id2=476">Tuition &amp; Fees</a><input type="hidden" id="e349952e0_788_799_parentid
+                    " value="e349952e0_788_
+                788"><ul id="e349952e0_788_799_submenu_items
+                      " class="ekflexmenu_submenu_items"><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;coll_id2=477" target="_self">Tuition Payments</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=2257" target="_self">Tuition Refunds</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=17796" target="_self">Certificate of Residence</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=26384" target="_self">Net Price Calculator</a></li></ul></li><li class="
+                      ekflexmenu_menu_level_1 ekflexmenu_submenu ekflexmenu_startlevel
+                      " id="e349952e0_788_800"><a id="e349952e0_788_800_button
+                      " tabindex="0" onkeydown="return (ekFlexMenuKey(event));" onblur="return (ekFlexMenuMsOut(event));" onfocus="return (ekFlexMenuMsOvr(event));" onclick="return (ekFlexMenuClk(event));" onmouseover="return (ekFlexMenuMsOvr(event));" onmouseout="return (ekFlexMenuMsOut(event));" class="ekflexmenu_button" href="/paying.aspx?menu=788&amp;id=1786">Financial Aid</a><input type="hidden" id="e349952e0_788_800_parentid
+                    " value="e349952e0_788_
+                788"><ul id="e349952e0_788_800_submenu_items
+                      " class="ekflexmenu_submenu_items_hidden"><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=1789" target="_self">Grants</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=1791" target="_self">Loans</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=1793" target="_self">Student Employment</a></li><li><a class="ekflexmenu_link" href="http://www.sunyocc.edu/index.aspx?menu=420&amp;id=15022" target="_top">Veterans' Benefits</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=15382" target="_self">Other Financial Support</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=8922" target="_self">Student Expense Budgets</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=15380" target="_self">Academic Standing</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=26004" target="_self">Financial Aid TV</a></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=25893" target="_self">Forms and Worksheets</a></li></ul></li><li><a class="ekflexmenu_link" href="/paying.aspx?menu=788&amp;id=25306" target="_self">Scholarships</a></li></ul></div></div></div><script language="JavaScript" type="text/javascript">
+                    // Pass server control properties, etc., to Javascript:
+                    if (("undefined" == typeof window.ekFlexMenu_ekflexmenuArray)
+                    || (null == window.ekFlexMenu_ekflexmenuArray)) {
+                    window.ekFlexMenu_ekflexmenuArray = new Array;
+                    }
+                    window.ekFlexMenu_ekflexmenuArray[window.ekFlexMenu_ekflexmenuArray.length] = "e349952e0_788_
+                0";
+                    //
+                    if (("undefined" == typeof window.ekFlexMenu_swRev)
+                    || (null == window.ekFlexMenu_swRev)) {
+                    window.ekFlexMenu_swRev = new Array;
+                    }
+                    window.ekFlexMenu_swRev["e349952e0"] = "8.0.0.073";
+                    //
+                    if (("undefined" == typeof window.ekFlexMenu_startupSubmenuBranchId)
+                    || (null == window.ekFlexMenu_startupSubmenuBranchId)) {
+                    window.ekFlexMenu_startupSubmenuBranchId = new Array;
+                    }
+                    window.ekFlexMenu_startupSubmenuBranchId["e349952e0"] = "";
+                    //
+                    if (("undefined" == typeof window.ekFlexMenu_autoCollapseBranches)
+                    || (null == window.ekFlexMenu_autoCollapseBranches)) {
+                    window.ekFlexMenu_autoCollapseBranches = new Array;
+                    }
+                    window.ekFlexMenu_autoCollapseBranches["e349952e0"] = "true";
+                    //
+                    if (("undefined" == typeof window.ekFlexMenu_startCollapsed)
+                    || (null == window.ekFlexMenu_startCollapsed)) {
+                    window.ekFlexMenu_startCollapsed = new Array;
+                    }
+                    window.ekFlexMenu_startCollapsed["e349952e0"] = "true";
+                    //
+                    if (("undefined" == typeof window.ekFlexMenu_startWithRootFolderCollapsed)
+                    || (null == window.ekFlexMenu_startWithRootFolderCollapsed)) {
+                    window.ekFlexMenu_startWithRootFolderCollapsed = new Array;
+                    }
+                    window.ekFlexMenu_startWithRootFolderCollapsed["e349952e0"] = "false";
+                    //
+                    if (("undefined" == typeof window.ekFlexMenu_masterControlIdHash)
+                    || (null == window.ekFlexMenu_masterControlIdHash)) {
+                    window.ekFlexMenu_masterControlIdHash = new Array;
+                    }
+                    window.ekFlexMenu_masterControlIdHash["e349952e0"] = "";                    //
+                    if (("undefined" == typeof window.ekFlexMenu_ajaxEnabled)
+                    || (null == window.ekFlexMenu_ajaxEnabled)) {
+                    window.ekFlexMenu_ajaxEnabled = new Array;
+                    }
+                    window.ekFlexMenu_ajaxEnabled["e349952e0"] = "false";
+                    //
+                    if (("undefined" == typeof window.ekFlexMenu_ajaxWSPath)
+                    || (null == window.ekFlexMenu_ajaxWSPath)) {
+                    window.ekFlexMenu_ajaxWSPath = new Array;
+                    }
+                    window.ekFlexMenu_ajaxWSPath["e349952e0"] = "/WorkArea/webservices/";
+                    //
+                    if (("undefined" == typeof window.ekFlexMenu_displayXslt)
+                    || (null == window.ekFlexMenu_displayXslt)) {
+                    window.ekFlexMenu_displayXslt = new Array;
+                    }
+                    window.ekFlexMenu_displayXslt["e349952e0"] = "/xsl/demo.xsl";
+                    //
+                    if (("undefined" == typeof window.ekFlexMenu_cacheInterval)
+                    || (null == window.ekFlexMenu_cacheInterval)) {
+                    window.ekFlexMenu_cacheInterval = new Array;
+                    }
+                    window.ekFlexMenu_cacheInterval["e349952e0"] = "600";
+                    //
+                    //////////////////////////////////////////////////////////////////
+                    // Add event handler calling functions:
+                    //   Test to ensure that ekFlexMenu is valid/reachable (this is needed
+                    //   to prevent intermittent Javascript errors that can occur if user
+                    //   causes event to fire while page is being torn down (i.e. a link is
+                    //   clicked, browser is fetching new page, movement causes mouse-out...):
+                    function ekFlexMenu_IsValid(obj) {
+                    return (("undefined" != typeof obj) && (null != obj));
+                    }
+                    function ekFlexMenuPopupMsIn(event) {
+                    if (ekFlexMenu_IsValid(ekFlexMenu) && ekFlexMenu_IsValid(ekFlexMenu.mouseIn)) {
+                    return (ekFlexMenu.mouseIn(event));
+                    }
+                    return (true);
+                    }
+                    function ekFlexMenuPopupMsOut(event) {
+                    if (ekFlexMenu_IsValid(ekFlexMenu) && ekFlexMenu_IsValid(ekFlexMenu.mouseOut)) {
+                    return (ekFlexMenu.mouseOut(event));
+                    }
+                    return (true);
+                    }
+                    function ekFlexMenuKey(event) {
+                    if (ekFlexMenu_IsValid(ekFlexMenu) && ekFlexMenu_IsValid(ekFlexMenu.menuBtnKeyHdlr)) {
+                    return (ekFlexMenu.menuBtnKeyHdlr(event));
+                    }
+                    return (true);
+                    }
+                    function ekFlexMenuMsOut(event) {
+                    if (ekFlexMenu_IsValid(ekFlexMenu) && ekFlexMenu_IsValid(ekFlexMenu.menuBtnMouseOutHdlr)) {
+                    return (ekFlexMenu.menuBtnMouseOutHdlr(event));
+                    }
+                    return (true);
+                    }
+                    function ekFlexMenuMsOvr(event) {
+                    if (ekFlexMenu_IsValid(ekFlexMenu) && ekFlexMenu_IsValid(ekFlexMenu.menuBtnMouseOverHdlr)) {
+                    return (ekFlexMenu.menuBtnMouseOverHdlr(event));
+                    }
+                    return (true);
+                    }
+                    function ekFlexMenuClk(event) {
+                    if (ekFlexMenu_IsValid(ekFlexMenu) && ekFlexMenu_IsValid(ekFlexMenu.menuBtnClickHdlr)) {
+                    return (ekFlexMenu.menuBtnClickHdlr(event));
+                    }
+                    return (true);
+                    }
+                  </script></span>
+            </div><!-- //END MENU AREA .menu-->
+          </div> <!-- //END ASIDE AREA #aside -->
+          <!-- BEGIN CONTENT AREA #section -->
+          <div id="section" class="clearfix hasmenu" runat="server">
+            <!-- CONTENT BLOCK -->
+            <div id="lifeofastudent" class="section bg-white clearfix"><div class="slider"><ul class="slidernav clearfix">
+            <li><a id="nav_intro" class="current" href="#intro">Intro</a></li>
+            <li><a id="nav_finances" href="#finances">Finances</a></li>
+            <li><a id="nav_getinvolved" href="#getinvolved">Get Involved</a></li>
+            <li><a id="nav_business" href="#business">Taking Care of Business</a></li>
+            <li><a id="nav_academicsuccess" href="#academicsuccess">Academic Success</a></li>
+            <li><a id="nav_lifeafter" href="#lifeafter">Life After Onondaga</a></li>
+            </ul>
+            <div class="slides_window"><div class="slides"><div class="slide" id="intro"><h3>Intro</h3>
+            <div class="col4 bg-hint-blue"><p>Life as a student at Onondaga Community College is a journey filled with experiences both in and out of the classroom. There's so much to think about and so many opportunities -- whether it's academics, financial aid, athletics, volunteering, extracurriculars, or more. You can explore your interests, discover your inherent talents, and transform your possibilities.</p>
+            <p>This website can help you navigate through the intricacies of college life and keep you on the path to success at Onondaga and beyond. Use this resource as a guide for your Onondaga journey and all it has to offer.</p>
+            </div>
+            </div>
+            <div class="slide" id="finances"><h3>Finances</h3>
+            <div class="col1 bg-light-green"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/edit.png" />Have you re-applied for financial aid and taken care of documents you need to complete your financial aid application?<a class="button small bg-hint-green" href="http://students.sunyocc.edu/central.aspx?menu=386">Learn How</a> </p>
+            </div>
+            <div class="col1 bg-hint-green"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/refresh.png" class="left" />Do you need to set up a payment plan to take care of your financial obligations to the College? <a class="button small bg-light-green" href="http://students.sunyocc.edu/central.aspx?menu=386">Start Now</a></p>
+            </div>
+            <div class="col1dot5 bg-white"><p><strong>Got questions?</strong><br />Get short video answers on <a href="#" class="button small bg-medium-green">Financial Aid TV</a></p>
+            </div>
+            <div class="col2 bg-white"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/newyork.jpg" class="left" />If you live outside of Onondaga county but in New York State, did you get your certificate of residency to ensure you continue to pay in-state tuition (60 days prior to the start of the fall)?   <a class="button small bg-dark-green white" href="http://students.sunyocc.edu/central.aspx?id=17796">Learn How</a></p>
+            </div>
+            </div>
+            <div class="slide" id="getinvolved"><h3>Get Involved</h3>
+            <div class="col1 bg-dark-blue white"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/intramural.jpg" /><p>Basketball, flag football, dodgeball, fantasy football and Madden football are just a few of the intramural sports you can do at Onondaga.<a class="button small bg-hint-blue" href="http://students.sunyocc.edu/life.aspx?menu=434&amp;id=1742">List of Sports</a></p>
+            </div>
+            <div class="col1 bg-hint-blue"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/servicelearning.jpg" /><p>Volunteering is a great way to give back while also gaining real experience.  The CAL Center can help find the right volunteer opportunity for you.<a class="button small bg-dark-blue white" href="http://students.sunyocc.edu/support.aspx?menu=410&amp;id=5013">CAL Center</a></p>
+            </div>
+            <div class="col2 bg-pale-blue"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/geologyclub.jpg" /><p>Onondaga has over 30 clubs and organizations that you can join to get involved with campus life.   <a class="button small bg-dark-blue white" href="http://students.sunyocc.edu/life.aspx?menu=490&amp;id=11084">Full List</a></p>
+            </div>
+            <div class="col2 bg-black white"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/calendar.png" /><br />From party on the quad to performances at the SRC Arena, there is never a dull moment on campus. Check the web calendar on the Students' Site to see all the upcoming events.</p>
+            <a class="button small bg-dark-orange" href="http://students.sunyocc.edu/">Calendar</a>
+            </div>
+            </div>
+            <div class="slide" id="business"><h3>Taking Care of Business</h3>
+            <div class="col2 bg-medium-red white"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/parking.jpg" class="left" />Did you get a new parking sticker?<a class="button small bg-hint-red" href="http://students.sunyocc.edu/">Learn How</a></p>
+            </div>
+            <div class="col1dot5 bg-dark-red white"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/smartcard.jpg" /><br />Do you need to add funds to your SMART card? You can do it online or in person.   <a class="button small bg-pale-red" href="http://students.sunyocc.edu/support.aspx?id=42">Add Funds</a></p>
+            </div>
+            <div class="col2 bg-black white"><p>Keep checking your OCC email to stay up to date on college events and requirements</p>
+            <object style="height: 233px; width: 310px"><param name="movie" value="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"></embed></object>
+                                    </div>
+            </div>
+            <div class="slide" id="academicsuccess"><h3>Academic Success</h3>
+            <div class="col1 bg-light-yellow"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/advising.jpg" /><p>Have you met with an advisor to talk about your goals and select the courses to keep you on track to graduate? <a class="button small bg-hint-yellow" href="http://students.sunyocc.edu/central.aspx?menu=372&amp;id=1557">Learn More</a></p>
+            </div>
+            <div class="col2 bg-black white"><p>Have you registered for courses?</p>
+            <object style="height: 233px; width: 310px"><param name="movie" value="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"></embed></object>
+                                    </div>
+            <div class="col1 bg-pale-yellow"><p><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/user_error.png" /><br />Have you looked at your program evaluation (degree audit) to find out what you still need to take to graduate?<a class="button small bg-medium-yellow" href="http://students.sunyocc.edu/central.aspx?menu=540&amp;id=22698">Start Now</a></p>
+            </div>
+            <div class="col2 bg-white"><p><strong>Courses may get harder.</strong><br />Don't forget about our free tutoring services:</p>
+            <ul>
+            <li><a href="http://students.sunyocc.edu/index.aspx?id=1409">Writing Skills Center</a></li>
+            <li><a href="http://students.sunyocc.edu/support.aspx?id=137">NightWriter</a></li>
+            <li><a href="http://students.sunyocc.edu/support.aspx?menu=394&amp;id=1556">Content Tutoring Center</a></li>
+            <li><a href="http://students.sunyocc.edu/WorkArea/linkit.aspx?LinkIdentifier=id&amp;ItemID=28236&amp;libID=28149">Language Lab</a></li>
+            <li><a href="http://students.sunyocc.edu/support.aspx?id=136">Study Skills Center</a></li>
+            <li><a href="http://students.sunyocc.edu/support.aspx?menu=398&amp;id=1079">Math Support Services</a></li>
+            </ul>
+            </div>
+            <div class="col2 bg-black white"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/graduation.jpg" /><p>Are you planning to graduate in the coming year? Don't forget to submit your application to participate in the ceremony before the start of your final semester.   <a class="button small bg-dark-yellow" href="http://students.sunyocc.edu/support.aspx">Apply Now</a></p>
+            </div>
+            </div>
+            <div class="slide" id="lifeafter"><h3>Life After Onondaga</h3>
+            <div class="col1 bg-medium-blue white"><img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/careertransfer.jpg" /><p>Do you need to talk to a transfer and/or career expert to begin planning for life after Onondaga?  <a class="button small bg-pale-blue" href="http://students.sunyocc.edu/central.aspx?menu=430&amp;id=1662">Get Help</a></p>
+            </div>
+            <div class="col2 bg-pale-blue"><p>Take an internship to get prepared for a job after college.  Here are some of the places our students have worked.   <a class="button small bg-hint-blue" href="http://students.sunyocc.edu/support.aspx?menu=410&amp;id=9488">Get an Internship</a></p>
+            <img src="http://www.sunyocc.edu/uploadedImages/zFolder_Tree/zSitelets/The_Life_of_a_Student/internships.jpg" width="310" height="310" /></div>
+            <div class="col2 bg-dark-blue white"><p>Your degree from Onondaga is the first step on the path to anywhere you want to go.</p>
+            <object style="height: 233px; width: 310px"><param name="movie" value="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><embed src="http://www.youtube.com/v/n_oJj0K5vMc?version=3&amp;feature=player_detailpage" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always"></embed></object>
+                                    </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <!-- COLLECTION -->
+            <!-- COLLECTION TYPE 2 -->
+            <!-- LIST SUMMARY -->
+            <!-- EKTRON FORM -->
+          </div><!-- //END CONTENT AREA #section -->
+        </div><!-- // END CONTAINER -->
+      </form><!-- //END PARENT EKTRON FORM -->
       <p class="dots">&nbsp;</p>
-    </div>
-    <div class="prefooter">
-        <div class="container">
-            <span id="cntFooter"></span>
-            <p class="dots">&nbsp;</p>
+    </div><!-- //END #main -->
+    <p class="dots">&nbsp;</p>
+    <!-- INCLUDE GLOBAL FOOTER -->
+    <div id="occfooter">
+      <div class="container">
+        <h2 class="col3 logotext">Onondaga Community College</h2>
+        <h2 class="col3 text tagline">Explore. Discover. <em>Transform</em>.</h2>
+        <div class="col3">
+          <a class="question" href="#">Have a Question?</a>
+          <p>4585 West Seneca Turnpike<br />Syracuse, NY 13219<br />315.498.2622<br /><a "mailto:occinfo@sunyocc.edu">occinfo@sunyocc.edu</a></p>
         </div>
-    </div>
-<div id="footer" class="clearfix">
-  <div class="container clearfix">
-    <div class="col3 first noborder">
-      <a href="http://www.sunyocc.edu/" title="Return to the Main College Homepage" class="logo">Onondaga Community College Main Homepage</a>
-      <p>
-        <strong class="forprint">Onondaga Community College<br /></strong>
-        4585 West Seneca Turnpike, Syracuse, NY 13215<br />
-        (315) 498-2622<br />
-        <span class="alpha50">Copyright &copy; 2011 - All Rights Reserved<br />
-        <a href="http://www.sunyocc.edu/index.aspx?id=4840">Privacy Policy</a></span>
-      </p>
-    </div>
-    <div class="col3">
-      <ul>
-        <li><a href="http://www.sunyocc.edu/index.aspx?ekfrm=3970">Contact Us</a></li>
-        <li><a href="http://www.sunyocc.edu/index.aspx?menu=807&amp;id=1817">Driving Directions</a></li>
-        <li><a href="http://www.sunyocc.edu/index.aspx?id=24426">Hours of Operation</a></li>
-      </ul>
-    </div>
-  </div>
-</div><script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-4758467-2']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-</script>
+        <div class="col1dot5">
+          <ul>
+            <li><a href="#">About the College</a></li>
+            <li><a href="#">Visit the Campus</a></li>
+            <li><a href="#">Maps &amp; Directions</a></li>
+            <li><a href="#">Extension Sites</a></li>
+            <li><a href="#">Hours of Operation</a></li>
+          </ul>
+        </div>
+        <div class="col1dot5">
+          <ul>
+            <li><a href="#">Employment Opportunities</a></li>
+            <li><a href="#">For the Media</a></li>
+            <li><a href="#">Event Space Available</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <p class="dots">&nbsp;</p>
+        <a href="#index" class="back-to-top">Top</a>
+      </div> <!-- end container -->
+    </div> <!-- end footer -->
+
+  <!-- INCLUDE WWW SCRIPTS -->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-4758467-2']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <script type="text/javascript" src="../../gui/js/modernizr.js"></script>
+  <script type="text/javascript" src="../../gui/js/jquery.js"></script>
+  <script type="text/javascript" src="../../gui/js/jqueryui.js"></script>
+  <script type="text/javascript" src="../../gui/js/tools.js"></script>
+  <script type="text/javascript" src="../../occ_global/js/occ_tools.js"></script>
+  <script type="text/javascript" src="http://galleries.sunyocc.edu/m/embed.js"></script>
 </body>
 </html>
