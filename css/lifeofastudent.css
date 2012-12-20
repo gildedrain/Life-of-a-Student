@@ -2,7 +2,7 @@ body{background:url(../images/bg_bodybg.jpg) repeat-x 0 48px;}
 #main h2, h2#menutitle{color:#FFF; text-shadow:0 2px 3px rgba(0,0,0,.5); font-family:'Permanent Marker', helvetica, arial; font-size:3em; margin:51px 0 0 0; padding:.25em .25em .25em 0;}
 /* HIDE STUFF */
 #globalnav, #aside {display:none;}
-#main {background:transparent;}
+#main {background:transparent;border:none;box-shadow:none;}
 #section.hasmenu,section.hasmenu,.section.hasmenu{float:none;width:970px; padding:0;}
 /* HORZY NAV */
 .section {margin:0; padding:30px 0 0 0; background:transparent; min-height:800px;}
